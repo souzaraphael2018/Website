@@ -1,0 +1,288 @@
+body{
+font-family: "Helvetica" ;	
+font-size: 16px;
+background-size: cover;
+background: #0034FF
+}
+
+
+/* Strip the ul of padding and list styling */
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+}
+li {
+	display:inline-block;
+	float: left;
+	margin-right: 1px;
+}
+
+/* Style for menu links */
+ul li a {
+	display: block;
+	min-width:148px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	color: #FFFFFF;
+	background: #151515;
+	text-decoration: none;
+	
+}
+/* Hover state for top level links */
+#menu, ul li:hover a{
+	background: #000DFF;
+	
+}
+/* Style for dropdown links */
+ li:hover ul li a {
+	background: #FF0004 ;
+	color: #FFFFFF;
+	height: 40px;
+	line-height: 40px;
+}
+/* Hover state for dropdown links */
+li:hover ul li a:hover{
+	background:#0143F7 ;
+	color: #FFFFFF;
+}
+/*  Hide dropdown links until they are needed */
+li ul {
+	display: none;
+}
+/* Make dropdown links vertical */
+li ul li {
+	display: block;
+	float: none;
+}
+/* Prevent text wrapping on dropdown links */
+li ul li a {
+	width: auto;
+	min-width: 149px;
+	padding: 0px 0px;
+}
+/* Display the dropdown links on hover */
+ul li a:hover + .hidden, .hidden:hover{
+	display: block;
+	
+}
+/* Hide checkbox */
+input[type=checkbox] {
+	display: none;
+}
+/* Show menu when invisible checked */
+input[type=checkbox]:checked ~ #menu {
+	display: block;
+} 
+.show-menu {
+	font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+	text-decoration: none;
+    background: #355731 ;
+	color: #FFFFFF;
+	text-align: center;
+	padding: 10px 0;
+	display: none;
+	
+}
+/* Responsive Styles */
+
+@media screen and (max-width: 760px){
+	/*Make dropdown links appear links */
+	ul {
+		position:static;
+		display: none;
+	}
+	/* Create vertical spacing */
+	li {
+		margin-bottom: 1px;
+	}
+	/* Make all menu links full width */
+	ul li, li a{
+		width:100%;
+	}
+	.show-menu{
+		display: block;
+	}
+	
+}
+	
+
+
+
+
+
+
+
+
+
+*{
+	margin:0;
+	padding:0;
+
+}
+.menu{
+width: 100%;
+height: 64px;
+font-family:"Helvetica";
+
+}
+.menu ul li{
+float: left;
+width:99px
+
+
+}
+
+
+.menu ul{
+list-style:none;
+position: relative;
+}
+.menu a{
+text-decoration: none;
+padding:6px;
+display: block;
+text-align: center;
+background-color: #353535;
+color:#FFFFFF;
+
+}
+.menu ul ul{
+position:absolute;
+visibility: hidden;
+
+}
+.menu ul li:hover  ul{
+	visibility: visible;
+} 
+.menu a:hover{
+	background-color: aqua;
+}
+
+body .hightlight, body .hightlight a{
+     color:#00B0E5;
+	font-weight: bold;
+	font-family:  Helvetica, Sans-Serif;
+	font-size:17px;
+	
+}
+
+
+
+
+div.gallery {
+    padding: ;
+    border: 1px solid  FFFFFF;
+    float: left;
+    width: 180px;
+	text-align: center;
+	height: 234px
+	
+	
+  }
+
+hover{opacity: 0.8;}
+
+div.gallery img {
+    width: 169px;
+    height:160px ;
+	border-radius: 5px;
+    transition: 0.3s;
+	}
+div.gallery img:hover{opacity: 0.7; }
+
+
+
+
+	
+ .Artist{
+	
+} 
+ 	
+	
+	
+
+  .Artist  a{
+	text-transform:;
+	color:blue;
+	
+	text-decoration: none;
+	 
+	   
+	}
+.Artist  a:hover{
+	color:white;
+ text-decoration: underline;
+}
+ .Albums  a{
+	color: black;
+	text-decoration: none;
+	
+}
+ .Albums   a:hover{
+	color:blue;
+	text-decoration: underline;
+	
+}
+div {
+	padding: 3px;
+	padding-top: ;
+	
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style the search field */
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  float: left;
+  width: 50%;
+  background: #f1f1f1;
+border: none;
+
+}
+
+form.example input[type=text]:hover{
+	background: #E4E4E4
+}
+form {
+	padding-left:1%;
+	padding-top: 8%;
+	
+}
+
+/* Style the submit button */
+form.example button {
+  float: left;
+  width: 10%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+ 
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+border:none
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+
+}
+
+
+
+ 
